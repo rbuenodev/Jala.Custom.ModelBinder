@@ -3,3 +3,6 @@
 ################################################################################
 
 /Jala.Custom.ModelBinder/bin/Debug/net6.0
+/Jala.Custom.ModelBinder/obj/Debug/net6.0
+/Jala.Custom.ModelBinder/obj
+/.vs/Jala.Custom.ModelBinder

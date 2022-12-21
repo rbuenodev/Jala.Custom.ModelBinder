@@ -8,7 +8,7 @@ namespace Jala.Custom.ModelBinder.Controllers;
 public class ModelBinderController : ControllerBase
 {
     [HttpGet]
-    public IActionResult Index([FromHeader(Name = "User-Agent")]string useragent)
+    public IActionResult Index([FromHeader(Name = "User-Agent")] string useragent)
     {
         return Ok(useragent);
     }
@@ -19,10 +19,10 @@ public class ModelBinderController : ControllerBase
         return Ok(id);
     }
 
-    [HttpPost]
-    public IActionResult Create(Page page)
+    [HttpPost()]
+    public IActionResult Create([FromQuery] int id, [FromBody] Page page)
     {
-        return Ok(page);
+        return Ok(page);        
     }
 }
 
